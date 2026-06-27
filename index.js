@@ -1,3 +1,5 @@
+//to get env
+require('dotenv').config()
 //to bring express 
 const express = require('express');
 // create and expose https server
@@ -12,5 +14,8 @@ app.get('/nandini',(req,res) =>
         res.send('nandini this side!')
     })
 app.listen(port, () =>{
+    console.log(`Example app listening on port ${port}`)
+})
+app.listen(process.env.PORT, () => {
     console.log(`Example app listening on port ${port}`)
 })
