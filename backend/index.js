@@ -13,7 +13,11 @@ app.get('/nandini',(req,res) =>
     { 
         res.send('nandini this side!')
     });
+<<<<<<< HEAD
 app.get('/api/jokes',(req,res) => {
+=======
+app.get('/jokes',(req,res) => {
+>>>>>>> 1d54ff0cf93ad73994102c42736a440665a3a0c9
     const jokes = [
         {
             id: 1,
