@@ -4,7 +4,7 @@
   "description": "||week 2.2 ECMAScript: language specification  Node.js: runtime bun:faster than node.js, written in zig language  CLIS: command line interface http : common way for website's frontend to talk to backend",
   "main": "inedx.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
