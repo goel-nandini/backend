@@ -17,11 +17,21 @@ const orderSchema = new mongoose.Schema({
     },
     customer:{
         type: mongoose.Schema.Types.ObjectId,
-        reef:"User"
+        ref:"User"
     },
     orderItems:{
         types:[orderItemSchema]
-    }
+    },
+     address:{
+        type: String,
+
+        required: true
+     },
+     status:{
+        type : String,
+        enum :["PENDING","CANCELLED","DELIVERED"],
+        default: "PENDING"
+     },
 },{timestamps:true})
 
 export const Order = mongoose.model("Order",orderSchema)
